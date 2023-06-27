@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+st.set_page_config(page_title="2x2 Images")
 st.title("2x2 Images")
 
 def get_progress_text(percentage):
