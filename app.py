@@ -68,7 +68,6 @@ def get_images(message_id, thenextleg_token):
     return (images, response_content)
 
 with st.form("prompt_form"):
-    st.write("TheNextLeg Driven Image Generation")
     thenextleg_token = st.text_input(label="TheNextLeg API Token", value="", type="password")
     prompt_input = st.text_area(label="Prompt", value="")
     submitted = st.form_submit_button("Go")
