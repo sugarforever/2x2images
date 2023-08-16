@@ -65,6 +65,7 @@ def get_images(message_id, thenextleg_token):
         else:
             progress = message["progress"]
             progress_bar.progress(progress, text=get_progress_text(progress))
+        sleep(5)
     return (images, response_content)
 
 with st.form("prompt_form"):
