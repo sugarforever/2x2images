@@ -6,8 +6,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-st.set_page_config(page_title="2x2 Images")
-st.title("2x2 Images")
+st.set_page_config(page_title="TheNextPants Images")
+st.title("TheNextPants Images")
 
 def get_progress_text(percentage):
     return f"Image generation in progress ({percentage}%). Please wait."
@@ -69,7 +69,7 @@ def get_images(message_id, thenextleg_token):
 
 with st.form("prompt_form"):
     st.write("TheNextLeg Driven Image Generation")
-    thenextleg_token = st.text_input(label="API Token", value="", type="password")
+    thenextleg_token = st.text_input(label="TheNextLeg API Token", value="", type="password")
     prompt_input = st.text_area(label="Prompt", value="")
     submitted = st.form_submit_button("Go")
     if submitted:
